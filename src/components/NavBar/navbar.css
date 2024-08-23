@@ -1,0 +1,53 @@
+.navbar{
+    height: 5rem;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.nav_logo{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content_item{
+    margin: 1rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content_item:hover{
+    color:turquoise;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid turquoise;
+    transition: 0.2s;
+}
+
+.contact {
+  padding: 0.9rem 1.5rem;
+  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: turquoise;
+}
+
+.contact:active {
+  background-color: turquoise;    
+}
