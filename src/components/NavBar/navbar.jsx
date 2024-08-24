@@ -7,7 +7,7 @@ function Navbar(){
     <nav className="navbar">
         <Link href="index.html" className="nav_logo">Rudraksha</Link>
         <div className="content">
-            <Link className="content_item">Home</Link>
+            <Link to="home" className="content_item">Home</Link>
             <Link className="content_item">About</Link>
             <Link className="content_item">Skills</Link>
             <Link className="content_item">Projects</Link>

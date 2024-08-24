@@ -1,6 +1,7 @@
 #intro{
     height:calc(100vh - 5rem);
     width: 100vw;
+    max-height: 45rem;
     max-width: 75rem;
     margin: 0 auto;
     overflow: hidden;
@@ -15,6 +16,7 @@
     object-fit: cover;
     height: 40  vh;
     width: 20vw;
+    filter: grayscale(90%);
 }
 
 .intro_content{
@@ -33,7 +35,7 @@
     color: turquoise;
 }
 
-
+    
 .about{
     font-size: 1.2rem;
     color: rgb(134, 130, 130);
