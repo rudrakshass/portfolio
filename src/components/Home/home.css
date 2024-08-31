@@ -14,9 +14,9 @@
     z-index: -1;
     top: 10rem;
     object-fit: cover;
-    height: 40  vh;
+    height: 40vh;
     width: 20vw;
-    filter: grayscale(90%);
+    filter: grayscale(100%);
 }
 
 .intro_content{
@@ -35,6 +35,9 @@
     color: turquoise;
 }
 
+.webd{
+    color: white;
+}
     
 .about{
     font-size: 1.2rem;
@@ -66,4 +69,3 @@
     background-color: turquoise;    
   }
   
-

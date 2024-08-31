@@ -11,10 +11,12 @@
     position: sticky;
     top: 0;
     z-index: 3;
+    color: white;
 }
 
 .nav_logo{
     font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 
 .content_item{
@@ -51,4 +53,10 @@
 
 .contact:active {
   background-color: turquoise;    
+}
+
+.chaticon{
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
 }
