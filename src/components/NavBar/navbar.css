@@ -45,7 +45,10 @@
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center; 
 }
+
 
 .contact:hover {
   background-color: turquoise;
