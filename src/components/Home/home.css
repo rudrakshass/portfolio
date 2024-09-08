@@ -1,71 +1,139 @@
-#intro{
-    height:calc(100vh - 5rem);
-    width: 100vw;
-    max-height: 45rem;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
+#intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rectbox {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    width: 70vw;
+    background-color: rgb(157, 157, 157);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: -4rem;
+    user-select: none;
+    pointer-events: none;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2; 
+    user-select: none;
+    pointer-events: none;
+}
+
+.photoofme {
+    display: flex;
+    justify-content: center;
+    object-fit: visible;
+    height: 35rem;
+    width: 35rem;
+    filter: grayscale(100%);
+    z-index: 2;
     position: relative;
 }
 
-.photoofme{
-    position: absolute;
-    left: 40rem;
-    z-index: -1;
-    top: 10rem;
-    object-fit: cover;
-    height: 40vh;
-    width: 20vw;
-    filter: grayscale(100%);
-}
-
-.intro_content{
-    height: 68vh;
-    width: 100vw;
-    padding: 8rem;
-    font-size: 1.8rem;
-    font-weight: 700;
+.nameinbox{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    display: flex;
+    position: absolute;
+    font-size: 7.1vw;
+    font-weight: bold;
+    z-index: 3;
+    bottom: -35%;
+    background: linear-gradient(to top, white 50%, teal 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    user-select:auto;
+    pointer-events: none;
+    padding: 0 1rem; 
+    white-space: nowrap;
 }
 
-.name{
-    font-size: 2.5rem;
-    color: turquoise;
+.hometext{
+    position:absolute;
+    z-index: 4;
+    font-size: 1.28rem;
+    font-weight: bold;
+    color: gray;
+    left: 17%;
+    top: 10%;
 }
 
-.webd{
+.scrolldown{
+    text-transform: uppercase;
+    position: absolute;
+    top: 80%;
     color: white;
 }
-    
-.about{
-    font-size: 1.2rem;
-    color: rgb(134, 130, 130);
+@media only screen and (min-width: 50px) {
+    .photoofme{
+        height: 20rem;
+        width: 20rem;
+    }
 }
 
-.intro_contact {
-    margin-top: 2rem;
-    width: 8rem;
-    padding: 0.9rem 1.5rem;
-    font-size: 0.8rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: black;
-    background-color: white;
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .intro_contact:hover {
-    background-color: turquoise;
-  }
-  
-  .intro_contact:active {
-    background-color: turquoise;    
-  }
-  
+@media only screen and (max-width: 375px) {
+    .photoofme{
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .nameinbox {
+        bottom: -28%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .photoofme{
+        height: 50rem;
+        width: 50rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .nameinbox {
+        top: -10;
+    }
+    .photoofme{
+        height: 35rem;
+        width: 35rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .nameinbox {
+        bottom: -27%;
+    }
+    .photoofme{
+        height: 32rem;
+        width: 32rem;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .nameinbox {
+        bottom: -35%;
+    }
+    .photoofme{
+        height: 35rem;
+        width: 35rem;
+    }
+}
+

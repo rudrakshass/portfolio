@@ -12,6 +12,7 @@
     top: 0;
     z-index: 3;
     color: white;
+    user-select: none;
 }
 
 .nav_logo{
@@ -63,3 +64,4 @@
   width: 1.2rem;
   margin-right: 0.5rem;
 }
+

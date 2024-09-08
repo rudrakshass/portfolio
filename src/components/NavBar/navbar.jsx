@@ -11,7 +11,6 @@ function Navbar(){
             <Link to="home" className="content_item">Home</Link>
             <Link to='about' className="content_item">About</Link>
             <Link className="content_item">Skills</Link>
-            <Link className="content_item">Projects</Link>
             <Link className="content_item">Qualifications</Link>
         </div>
         <button className="contact"><img src={chatbubble} alt="chaticon" className='chaticon' />Contact Me</button>
