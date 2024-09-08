@@ -1,4 +1,4 @@
-.navbar{
+.topbar{
     height: 5rem;
     width: 75%;
     margin: 0 auto;
@@ -15,18 +15,21 @@
     user-select: none;
 }
 
-.nav_logo{
+.top_logo{
     font-family: 'Courier New', Courier, monospace;
     color: white;
+    margin: 0 2rem;
+    font-size: 1.2rem;
 }
 
-.content_item{
-    margin: 1rem;
+.topcontent_item{
+    margin: 0rem 1rem; 
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
 }
 
-.content_item:hover{
+.topcontent_item:hover{
     color:turquoise;
     padding-bottom: 0.2rem;
     border-bottom: 0.1rem solid turquoise;
@@ -48,7 +51,9 @@
   cursor: pointer;
   display: inline-flex;
   align-items: center; 
+  margin: 1rem;
 }
+
 
 
 .contact:hover {
@@ -63,5 +68,64 @@
   height: 1.2rem;
   width: 1.2rem;
   margin-right: 0.5rem;
+}
+
+@media (max-width:1115px) {
+  .nav_logo,.topcontent_item{
+    font-size: 1rem;
+    margin: 0rem 0.7rem;
+  }
+  .contact{
+    padding: 0.7rem 1.3rem;
+    font-size: 0.6rem;
+  }
+  .chaticon{
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+}
+
+@media (max-width:960px) {
+  .nav_logo,.topcontent_item{
+    font-size: 0.9rem;
+    margin: 0rem 0.6rem;
+  }
+  .contact{
+    padding: 0.6rem 1.2rem;
+    font-size: 0.5rem;
+  }
+  .chaticon{
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-right: 0.4rem;
+  }
+  
+}
+
+
+@media (max-width:890px) {
+  .nav_logo,.topcontent_item{
+    font-size: 0.8rem;
+    margin: 0rem 0.5rem;
+  }
+  
+  .contact{
+    padding: 0.5rem 1.1rem;
+    font-size: 0.4rem;
+  }
+  .chaticon{
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-right: 0.3rem;
+  }
+  
+}
+
+@media (max-width:815px) {
+  .topbar{
+    display: none;
+  }
 }
 

@@ -13,12 +13,9 @@ function Home(){
         <img src={imgme} alt="Me" className="photoofme" />
         </div>
         <span className="nameinbox">RUDRAKSHA SINGH</span>
+        <div className="webdevtxt"><ReactTyped strings={[">Front End Developer"]} typeSpeed={100}/> </div>
       </div>
-      <div className="hometext">A web developer focused on front-end design <br/>and building clean, responsive interfaces. 
-      <br/>Constantly learning and expanding my skill set, <br/>with a solid foundation in data structures <br/>and algorithms to ensure efficient code.<br/>
-      <ReactTyped strings={["Take a look at my work—I’d love to connect!"]} typeSpeed={100} loop /> 
-      </div>
-      {/* <button className="scrolldown">Scroll Down</button> */}
+      <button className="scrolldown">Scroll Down</button>
     </section>
   );
 }

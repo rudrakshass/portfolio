@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
 #intro {
     position: relative;
     display: flex;
@@ -6,11 +8,13 @@
     height: 100vh;
 }
 
+
 .rectbox {
     display: flex;
     justify-content: center;
-    height: 30vh;
+    height: 17vh;
     width: 70vw;
+    top: 4%;
     background-color: rgb(157, 157, 157);
     border-radius: 20px;
     position: relative;
@@ -54,7 +58,7 @@
     font-size: 7.1vw;
     font-weight: bold;
     z-index: 3;
-    bottom: -35%;
+    bottom: -63%;
     background: linear-gradient(to top, white 50%, teal 50%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -65,14 +69,21 @@
     white-space: nowrap;
 }
 
-.hometext{
-    position:absolute;
+.webdevtxt{
+    position:relative;
+    text-transform: uppercase;
     z-index: 4;
-    font-size: 1.28rem;
-    font-weight: bold;
-    color: gray;
-    left: 17%;
-    top: 10%;
+    font-size: 4rem;
+    font-family: "Handjet", sans-serif;
+    text-align: justify;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    color: white;
+    top: 110%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
 }
 
 .scrolldown{
@@ -80,60 +91,27 @@
     position: absolute;
     top: 80%;
     color: white;
-}
-@media only screen and (min-width: 50px) {
-    .photoofme{
-        height: 20rem;
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .photoofme{
-        height: 20rem;
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 414px) {
-    .nameinbox {
-        bottom: -28%;
-    }
+    padding: 0.9rem 1.5rem;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center; 
 }
 
-@media only screen and (max-width: 390px) {
-    .photoofme{
-        height: 50rem;
-        width: auto;
-    }
+.scrolldown:hover {
+    background-color: turquoise;
 }
-
-@media only screen and (max-width: 430px) {
-    .nameinbox {
-        top: -10;
-    }
-    .photoofme{
-        height: 35rem;
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-    .nameinbox {
-        bottom: -27%;
-    }
-    .photoofme{
-        height: 32rem;
-        width: auto;
-    }
-}
-@media only screen and (min-width: 1500px) {
-    .nameinbox {
-        bottom: -35%;
-    }
-    .photoofme{
-        height: 35rem;
-        width: auto;
-    }
+  
+.scrolldown:active {
+    background-color: turquoise;    
 }
 
