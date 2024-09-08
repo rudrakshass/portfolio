@@ -40,7 +40,7 @@
     justify-content: center;
     object-fit: visible;
     height: 35rem;
-    width: 35rem;
+    width: auto;
     filter: grayscale(100%);
     z-index: 2;
     position: relative;
@@ -84,14 +84,14 @@
 @media only screen and (min-width: 50px) {
     .photoofme{
         height: 20rem;
-        width: 20rem;
+        width: auto;
     }
 }
 
 @media only screen and (max-width: 375px) {
     .photoofme{
         height: 20rem;
-        width: 20rem;
+        width: auto;
     }
 }
 
@@ -104,7 +104,7 @@
 @media only screen and (max-width: 390px) {
     .photoofme{
         height: 50rem;
-        width: 50rem;
+        width: auto;
     }
 }
 
@@ -114,7 +114,7 @@
     }
     .photoofme{
         height: 35rem;
-        width: 35rem;
+        width: auto;
     }
 }
 
@@ -124,7 +124,7 @@
     }
     .photoofme{
         height: 32rem;
-        width: 32rem;
+        width: auto;
     }
 }
 @media only screen and (min-width: 1500px) {
@@ -133,7 +133,7 @@
     }
     .photoofme{
         height: 35rem;
-        width: 35rem;
+        width: auto;
     }
 }
 
