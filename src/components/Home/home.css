@@ -12,7 +12,7 @@
 .rectbox {
     display: flex;
     justify-content: center;
-    height: 17vh;
+    height: 15vh;
     width: 70vw;
     top: 4%;
     background-color: rgb(157, 157, 157);
@@ -58,7 +58,7 @@
     font-size: 7.1vw;
     font-weight: bold;
     z-index: 3;
-    bottom: -63%;
+    bottom: -71%;
     background: linear-gradient(to top, white 50%, teal 50%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -89,14 +89,13 @@
 .scrolldown{
     text-transform: uppercase;
     position: absolute;
-    top: 80%;
+    top: 85%;
     color: white;
     padding: 0.9rem 1.5rem;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: black;
-    background-color: white;
+    color: white;
     border: none;
     border-radius: 30px;
     text-decoration: none;
@@ -104,14 +103,23 @@
     transition: all 0.3s ease;
     cursor: pointer;
     display: inline-flex;
-    align-items: center; 
+    align-items: center;
+    user-select: none; 
 }
+
 
 .scrolldown:hover {
-    background-color: turquoise;
-}
-  
-.scrolldown:active {
-    background-color: turquoise;    
+    color: turquoise;
 }
 
+.scrolldown:active {
+    color: turquoise;    
+}
+
+.scrollingmouse{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.5rem;
+    filter: invert(1);
+    transition: all 1s ease;
+}
