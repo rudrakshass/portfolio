@@ -10,7 +10,7 @@ function Navbar(){
         <div className="topcontent">
             <Link to="home" className="topcontent_item">Home</Link>
             <Link to='about' className="topcontent_item">About</Link>
-            <Link className="topcontent_item">Skills</Link>
+            <Link to='skills' className="topcontent_item">Skills</Link>
             <Link className="topcontent_item">Qualifications</Link>
         </div>
         <button className="contact"><img src={chatbubble} alt="chaticon" className='chaticon' />Contact Me</button>

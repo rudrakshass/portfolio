@@ -8,9 +8,9 @@ function About() {
   return (
     <section id="about_content">
     <section id="about">
-        <div className="abtheading">
-                <span className="abtheading_text">About Me!</span>
-                <span className="abtsubheading">Brief Introduction</span>
+        <div className="heading">
+                <span className="heading_text">About Me!</span>
+                <span className="subheading">Brief Introduction</span>
         </div>
         <div id="abtbox">
             <div id="abtbox_item">
