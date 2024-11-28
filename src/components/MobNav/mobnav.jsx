@@ -1,7 +1,7 @@
 import React from 'react';
 import './mobnav.css';
 import { Link } from 'react-scroll';
-import chatbubble from '../../Assets/chatting.png';
+import chatbubble from '../../Assets/nav/chatting.png';
 
 function Mobnav() {
   return (

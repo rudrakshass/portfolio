@@ -1,8 +1,8 @@
 .topbar{
-    height: 5rem;
+    height: 10%;
     width: 75%;
     margin: 0 auto;
-    background-color: rgba(30, 30, 30);
+    background-color: rgba(30, 30, 30, 0.815);
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@
 }
 
 .contact {
-  padding: 0.9rem 1.5rem;
+  padding: 0.7rem 1.2rem;
   font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -47,7 +47,7 @@
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 100ms;
   cursor: pointer;
   display: inline-flex;
   align-items: center; 

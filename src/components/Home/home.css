@@ -1,125 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
-
-#intro {
-    position: relative;
+#intro{
     display: flex;
-    justify-content: center;
+    height:calc(100vh - 8rem);
     align-items: center;
-    height: 100vh;
-}
-
-
-.rectbox {
-    display: flex;
-    justify-content: center;
-    height: 15vh;
-    width: 70vw;
-    top: 4%;
-    background-color: rgb(157, 157, 157);
-    border-radius: 20px;
+    width: 100vw;
+    max-height: 40%;
+    max-width: 80%;
+    margin: 0 19%;
     position: relative;
-    z-index: 1;
-    margin-top: -4rem;
-    user-select: none;
-    pointer-events: none;
 }
 
-.imgcontainer {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    z-index: 2; 
-    user-select: none;
-    pointer-events: none;
-}
-
-.photoofme {
-    display: flex;
-    justify-content: center;
-    object-fit: visible;
-    height: 35rem;
+.photoofme{
+    position: relative;
+    object-fit: cover;
+    height: 50%;
     width: auto;
-    filter: grayscale(100%);
-    z-index: 2;
-    position: relative;
+    filter: grayscale(90%);
 }
 
-.nameinbox{
-    display: flex;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    font-size: 7.1vw;
-    font-weight: bold;
-    z-index: 3;
-    bottom: -71%;
-    background: linear-gradient(to top, white 50%, teal 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    user-select:auto;
-    pointer-events: none;
-    padding: 0 1rem; 
-    white-space: nowrap;
-}
-
-.webdevtxt{
-    position:relative;
-    text-transform: uppercase;
-    z-index: 4;
-    font-size: 4rem;
-    font-family: "Handjet", sans-serif;
-    text-align: justify;
-    letter-spacing: 0.3rem;
-    font-weight: 800;
-    color: white;
-    top: 110%;
-    display: flex;
-    justify-content: center;
+.intro_content{
+    display: inline-flex;
     flex-direction: column;
-    white-space: nowrap;
+    height: 70%;
+    width: 50%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    justify-content: center;
 }
 
-.scrolldown{
-    text-transform: uppercase;
-    position: absolute;
-    top: 85%;
+.name{
+    font-size: 3rem;
+    color: turquoise;
+}
+.webd{
+    font-size: 2.2rem;
     color: white;
+}
+.about{
+    font-size: 1.5rem;
+    color: rgb(134, 130, 130);
+}
+
+.intro_contact {
+    margin-top: 2rem;
+    width: 8rem;
     padding: 0.9rem 1.5rem;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: white;
+    color: black;
+    background-color: white;
     border: none;
     border-radius: 30px;
     text-decoration: none;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.2s;
     cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    user-select: none; 
-}
-
-
-.scrolldown:hover {
-    color: turquoise;
-}
-
-.scrolldown:active {
-    color: turquoise;    
-}
-
-.scrollingmouse{
-    height: 3rem;
-    width: 3rem;
-    margin-right: 0.5rem;
-    filter: invert(1);
-    transition: all 1s ease;
-}
+  }
+  
+  .intro_contact:hover {
+    background-color: turquoise;
+  }
+  
+  .intro_contact:active {
+    background-color: turquoise;    
+  }
+  
+  @media (max-width: 768px) {
+    #intro{
+        height: 60vh;
+        margin: 0 19%;
+        max-width: 90%;
+    }
+    .intro_contact{
+        margin-top: 1rem;
+        width: 5rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.5rem;
+    }
+    .photoofme{
+        height: 15rem;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    .webd{
+        font-size: 1rem;
+        color: white;
+    }
+    .about{
+        font-size: 0.7rem;
+        color: rgb(134, 130, 130);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #intro{
+        height: 50vh;
+        margin: 0 40%;
+        max-width: 90%;
+    }
+    .photoofme{
+        height: 15rem;
+    }
+    .name{
+        font-size: 1.3rem;
+    }
+    .webd{
+        font-size: 1rem;
+        color: white;
+    }
+    .about{
+        font-size: 0.7rem;
+        color: rgb(134, 130, 130);
+    }
+    .intro_contact{
+        margin-top: 1rem;
+        width: 5rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.5rem;
+    }
+  }
