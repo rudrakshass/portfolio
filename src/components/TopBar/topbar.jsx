@@ -16,7 +16,9 @@ function Navbar(){
             <Link to="skills" className="topcontent_item" offset={-140}>Skills</Link>
             <Link to='projects' className="topcontent_item" offset={-140}>Projects</Link>
         </div>
+        <Link to='contact' offset={-140}>
         <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.8}} className="contact"><img src={chatbubble} alt="chaticon" className='chaticon' />Contact Me</motion.button>
+        </Link>
     </nav>
   )
 }

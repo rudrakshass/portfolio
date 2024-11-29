@@ -27,6 +27,7 @@
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
+    transition: all ease 0.4;
 }
 
 .topcontent_item:hover{
@@ -34,6 +35,7 @@
     padding-bottom: 0.2rem;
     border-bottom: 0.1rem solid turquoise;
     transition: 0.2s;
+    font-size: 1.5rem;
 }
 
 .contact {

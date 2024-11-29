@@ -12,8 +12,9 @@ export default function Contact() {
     setExpandedBox(expandedBox === boxId ? null : boxId); 
   };
   return (
-    <section className="contact-section">
+    <section id="contact">
         <h2 className="contact-heading">Hit Me Up!</h2>
+        <span className="contact-subheading">Lets talk</span>
             <div className="contact-content">
                 <div id="infobox">
                 {[
