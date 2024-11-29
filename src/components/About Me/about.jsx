@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { delay, motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import abtimg from "../../Assets/about/abtimg.png";
 import "./about.css";
 
@@ -18,9 +18,9 @@ export default function About() {
       </div>
       <div id="abtbox">
         {[
-          { id: 1, title: "Experience", content: "I’m still learning but have a passion for creating clean and functional designs." },
-          { id: 2, title: "Projects", content: "I’ve worked on 2+ projects, showcasing responsive and interactive designs." },
-          { id: 3, title: "Support", content: "I’m always available to collaborate and share ideas, providing 24/7 support." },
+          { id: 1, title: "Experience", content: "I'm still learning but have a passion for creating clean and functional designs." },
+          { id: 2, title: "Projects", content: "I've worked on 2+ projects, showcasing responsive and interactive designs." },
+          { id: 3, title: "Support", content: "I'm always available to collaborate and share ideas, providing 24/7 support." },
         ].map((box) => (
           <motion.div
             key={box.id}
@@ -31,7 +31,11 @@ export default function About() {
               height: expandedBox === box.id ? "16rem" : "8rem",
               width: expandedBox === box.id ? "18rem" : "9rem",
             }}
-            transition={{duration: 0.4 }}
+            transition={{
+              type: "tween",
+              duration: 0.4,
+              ease: "anticipate"
+            }}
             className={`box ${expandedBox === box.id ? "hovered" : ""}`}
           >
             <motion.span
@@ -40,7 +44,12 @@ export default function About() {
               animate={{
                 fontSize: expandedBox === box.id ? "1.5rem" : "1rem",
               }}
-              transition={{ delay:0.3,duration: 0.3}}
+              transition={{ 
+                type: "tween",
+                duration: 0.3,
+                ease: "anticipate",
+                delay: expandedBox === box.id ? 0.2 : 0
+              }}
             >
               {box.title}
             </motion.span>
@@ -48,7 +57,7 @@ export default function About() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay:0.6,duration: 0.3 }}
+                transition={{ delay: 0.6, duration: 0.3 }}
                 className="expandedContent"
               >
                 {box.content}
@@ -60,8 +69,8 @@ export default function About() {
       <div className="aboutcontent">
         <div className="abouttext">
           <span className="aboutpara">
-            I’m a frontend developer focused on building clean and user-friendly web pages. Although I’m still new to the
-            field, I’m continuously learning and improving my skills in UI/UX design. My goal is to create smooth and
+            I'm a frontend developer focused on building clean and user-friendly web pages. Although I'm still new to the
+            field, I'm continuously learning and improving my skills in UI/UX design. My goal is to create smooth and
             engaging user experiences while steadily growing my expertise through real-world projects.
           </span>
         </div>
