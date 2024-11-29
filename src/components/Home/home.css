@@ -15,9 +15,14 @@
     object-fit: cover;
     height: 50%;
     width: auto;
-    filter: grayscale(90%);
+    filter: grayscale(50%);
 }
 
+.playwiththis{
+    position: relative;
+    top:-30%;
+    left:-3%;
+}
 
 .intro_content{
     display: inline-flex;

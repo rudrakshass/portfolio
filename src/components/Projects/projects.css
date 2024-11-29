@@ -1,5 +1,4 @@
 .projects{
-    min-height: 100vh;
     padding: 2rem 0;
     overflow: auto;
 }
@@ -13,7 +12,8 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 5rem;
+    margin: 3rem;
+    margin-bottom: 1rem;
     user-select: none;
 }
 
@@ -29,6 +29,7 @@
     color: grey;
 }
 
+
 #prjabtbox {
     display: flex;
     justify-content: center;
@@ -42,11 +43,11 @@
     border-radius: 3%;
     padding: 1rem;
     text-align: center;
-    width: 25%;
+    width: 30%;
     background: linear-gradient(145deg, #1b1b1b, #202020);
     box-shadow:  6px 6px 12px #1c1c1c,
              -6px -6px 12px #202020;
-             transition: all ease 0.5;
+    transition: all 1s;
 }
 
 #prjbox_item:hover{
@@ -68,7 +69,7 @@ margin-bottom: 1.5rem;
 
 .prjboxtitle{
     text-transform: capitalize;
-    font-weight: 300;
+    font-weight: 700;
     padding: 1rem;
     text-align: center;
     font-size: 1.2rem;
@@ -77,6 +78,6 @@ margin-bottom: 1.5rem;
 
 .prjboxtxt{
     position: relative;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #666;
 }

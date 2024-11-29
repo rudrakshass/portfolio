@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { delay, motion } from "framer-motion"; // Correct import path
+import { delay, motion } from "framer-motion"; 
 import abtimg from "../../Assets/about/abtimg.png";
 import "./about.css";
 
@@ -7,7 +7,7 @@ export default function About() {
   const [expandedBox, setExpandedBox] = useState(null);
 
   const toggleExpand = (boxId) => {
-    setExpandedBox(expandedBox === boxId ? null : boxId); // Toggle expansion
+    setExpandedBox(expandedBox === boxId ? null : boxId); 
   };
 
   return (
