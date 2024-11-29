@@ -67,6 +67,7 @@
   
   .intro_contact:hover {
     background-color: turquoise;
+    font-size: 0.9rem;
   }
   
   .intro_contact:active {
