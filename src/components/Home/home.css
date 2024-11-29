@@ -16,6 +16,7 @@
     height: 50%;
     width: auto;
     filter: grayscale(50%);
+    z-index: 99;
 }
 
 .playwiththis{
