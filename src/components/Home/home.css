@@ -27,24 +27,23 @@
 .intro_content{
     display: inline-flex;
     flex-direction: column;
-    height: 70%;
-    width: 30%;
-    font-size: 1.8rem;
+    height: 70vh;
+    width: 30vw;
     font-weight: 700;
     justify-content: center;
     text-align: justify;
 }
 
 .name{
-    font-size: 3rem;
+    font-size: 280%;
     color: turquoise;
 }
 .webd{
-    font-size: 2.2rem;
+    font-size: 230%;
     color: white;
 }
 .about{
-    font-size: 1.5rem;
+    font-size: 150%;
     color: rgb(134, 130, 130);
 }
 

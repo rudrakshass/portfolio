@@ -18,7 +18,7 @@ function Home(){
             <motion.button whileHover={{scale:1.2}} whileTap={{scale:0.7}} className="intro_contact">Hit Me Up!</motion.button>
             </Link>
         </div>
-        <motion.img drag whileDrag={{scale:0.8, borderRadius:50, zIndex:99}} dragSnapToOrigin whileHover={{scale:1.2}} src={imgme} alt="Me" className="photoofme" />
+        <motion.img drag whileDrag={{scale:0.8, borderRadius:50, zIndex:99}} dragSnapToOrigin whileHover={{scale:1.2, zIndex:99}} src={imgme} alt="Me" className="photoofme" />
         <img className='playwiththis' src={playwiththis} alt="arrow pointing to image, telling to play with it." />
     </section>
   )
