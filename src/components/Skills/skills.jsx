@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="skills-heading">
-        <span className="skills-heading-text">My Skills!</span>
+        <span className="skills-heading-text">My Skills</span>
         <span className="skills-subheading">My Knowledge Base</span>
       </div>
       <div className="skills-tables">

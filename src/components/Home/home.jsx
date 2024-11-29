@@ -2,15 +2,16 @@ import React from 'react';
 import './home.css';
 import { animate, stagger } from 'motion';
 import { motion } from 'motion/react';
-import imgme from '../../Assets/home/photoofme2.png'
+import imgme from '../../Assets/home/photoofme2.png';
+import { ReactTyped } from 'react-typed';
 
 function Home(){
   return (
     <section id="intro">
         <div className="intro_content">
             <motion.span className="name">Rudraksha Singh</motion.span>
-            <span className="webd">Web Developer</span>
-            <span className="about"><br/>A web developer focused on front-end design <br/>and building clean, responsive interfaces. <br/>Constantly learning and expanding my skill set, <br/>with a solid foundation in data structures <br/>and algorithms to ensure efficient code. <br/> Take a look at my work—I’d love to connect!<br/></span>
+            <span className='webd'>>Web <ReactTyped strings={["Developer","Designer"]} typeSpeed={70} backSpeed={80} loop/></span>
+            <span className="about"><br/>A web developer focused on front-end design and building clean, responsive interfaces. Constantly learning and expanding my skill set, with a solid foundation in data structures and algorithms to ensure efficient code. Take a look at my work <br />—I’d love to connect!<br/></span>
             <motion.button whileHover={{scale:1.2}} whileTap={{scale:0.7}} className="intro_contact">Hit Me Up!</motion.button>
         </div>
         <motion.img drag whileDrag={{scale:0.8, borderRadius:50}} dragSnapToOrigin whileHover={{scale:1.2}} src={imgme} alt="Me" className="photoofme" />

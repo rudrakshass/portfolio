@@ -5,7 +5,8 @@
     width: 100vw;
     max-height: 40%;
     max-width: 80%;
-    margin: 0 19%;
+    gap: 5%;
+    margin: 0 25%;
     position: relative;
 }
 
@@ -22,10 +23,11 @@
     display: inline-flex;
     flex-direction: column;
     height: 70%;
-    width: 50%;
+    width: 30%;
     font-size: 1.8rem;
     font-weight: 700;
     justify-content: center;
+    text-align: justify;
 }
 
 .name{
