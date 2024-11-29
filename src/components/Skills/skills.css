@@ -1,0 +1,91 @@
+.skills{
+    min-height: 100vh;
+    padding: 2rem 0;
+    overflow: auto;
+}
+
+.skills-heading {
+    color: teal;
+    font-weight: 300;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5rem;
+    user-select: none;
+}
+
+.skills-heading-text {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 0.1rem; 
+}
+
+.skills-subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: grey;
+}
+
+.skills-tables {
+    display: flex; 
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+  
+  
+.table table {
+    border-collapse: collapse;
+    height: 25rem;
+    width: 18rem;
+    background-color: #2a2929;
+    color: white;
+    border-radius: 3%;
+    transition: 0.3s ease;
+    background: linear-gradient(145deg, #1b1b1b, #202020);
+    box-shadow:  6px 6px 12px #1c1c1c,
+             -6px -6px 12px #202020;
+}
+
+.table table:hover{
+    box-shadow:  8px 8px 16px #151515,
+             -8px -8px 16px #272727;
+}
+
+.table table.inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 5px;
+}
+  
+.table th {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.table td {
+    height: 30%;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    padding: 1rem;  
+}
+  
+.big-text {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+.small-text {
+    position: relative;
+    font-size: 0.9rem;
+    color: #666;
+}

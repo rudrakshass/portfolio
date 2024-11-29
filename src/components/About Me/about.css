@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.aboutcontent{
-    height: calc(100vh - 5rem);
+.about{
+    display: inline-flex;
 }
 .abtheading {
     color: teal;
@@ -20,7 +20,6 @@
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 0.1rem; 
-    color: white;
 }
 
 .abtsubheading {
@@ -57,7 +56,7 @@
 #abtbox_item {
     position: relative;
     overflow: visible;
-    margin: 5rem 1rem;
+    margin: 5rem 1.2rem;
     margin-bottom: 8rem;
     margin-top: 0;
     display: flex;
@@ -68,18 +67,37 @@
     border: 0.1rem;
     border-radius: 15%;
     border-color: white;
-    background-color: rgb(42, 41, 41);
+    background-color: #2a2929;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    background: linear-gradient(145deg, #1b1b1b, #202020);
+    box-shadow:  6px 6px 12px #1c1c1c,
+             -6px -6px 12px #202020;
 }
 
 #abtbox_item:hover{
-    box-shadow: rgba(0, 128, 128, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow:  8px 8px 16px #151515,
+             -8px -8px 16px #272727;
 }
+
+#abtbox_item.hovered {
+    box-shadow: 8px 8px 16px #151515, -8px -8px 16px #272727; /* Same as hover effect */
+  }
+
+.expandedContent {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: lightgray;
+    text-align: center;
+    padding: 2rem;
+    color: rgb(134, 130, 130);
+  }
+  
+
 
 #abtboxwrap.inner {
     position: relative;
@@ -87,7 +105,7 @@
     width: 100%;
     margin: 5px;
 }
-
+/* 
 #abtboxwrap::before{
     content: "";
   display: block;
@@ -103,7 +121,7 @@
   position: absolute;
   animation: rotate 8s linear infinite;
   z-index: -1;
-}
+} */
 .inner {
     position: relative;
     z-index: 2;

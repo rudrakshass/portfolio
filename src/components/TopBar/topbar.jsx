@@ -11,10 +11,10 @@ function Navbar(){
         animate
         href="index.html" className="top_logo">Rudraksha</motion.a>
         <div className="topcontent">
-            <Link to="home" className="topcontent_item">Home</Link>
-            <Link to='about' className="topcontent_item">About</Link>
-            <Link className="topcontent_item">Skills</Link>
-            <Link className="topcontent_item">Qualifications</Link>
+            <Link to="home" className="topcontent_item" offset={-140}>Home</Link>
+            <Link to='about' className="topcontent_item" offset={-140}>About</Link>
+            <Link to="skills" className="topcontent_item">Skills</Link>
+            <Link className="topcontent_item">Projects</Link>
         </div>
         <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.8}} className="contact"><img src={chatbubble} alt="chaticon" className='chaticon' />Contact Me</motion.button>
     </nav>

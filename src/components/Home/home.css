@@ -17,6 +17,7 @@
     filter: grayscale(90%);
 }
 
+
 .intro_content{
     display: inline-flex;
     flex-direction: column;
