@@ -15,10 +15,10 @@ function Home(){
             <span className='webd'>>Web <ReactTyped strings={["Developer","Designer"]} typeSpeed={70} backSpeed={80} loop/></span>
             <span className="about"><br/>A web developer focused on front-end design and building clean, responsive interfaces. Constantly learning and expanding my skill set, with a solid foundation in data structures and algorithms to ensure efficient code. Take a look at my work <br />—I’d love to connect!<br/></span>
             <Link to='contact' offset={-140}>
-            <motion.button whileHover={{scale:1.2}} whileTap={{scale:0.7}} className="intro_contact">Hit Me Up!</motion.button>
+            <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.7}} className="intro_contact">Hit Me Up!</motion.button>
             </Link>
         </div>
-        <motion.img drag whileDrag={{scale:0.8, borderRadius:50, zIndex:99}} dragSnapToOrigin whileHover={{scale:1.2, zIndex:99}} src={imgme} alt="Me" className="photoofme" />
+        <motion.img drag whileDrag={{scale:0.8, borderRadius:60, zIndex:99, background:0, boxShadow:0}} dragSnapToOrigin whileHover={{scale:1.2, zIndex:99, background:0, boxShadow:0}} src={imgme} alt="Me" className="photoofme" />
         <img className='playwiththis' src={playwiththis} alt="arrow pointing to image, telling to play with it." />
     </section>
   )

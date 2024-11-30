@@ -13,9 +13,12 @@
 .photoofme{
     position: relative;
     object-fit: cover;
-    height: 50%;
-    width: auto;
+    height: auto;
+    width: 30%;
     filter: grayscale(50%);
+    border-radius: 19px;
+    background: linear-gradient(145deg,#202020);
+    box-shadow:  18px 18px 16px #0c0c0c;
 }
 
 .playwiththis{
@@ -28,22 +31,22 @@
     display: inline-flex;
     flex-direction: column;
     height: 70vh;
-    width: 30vw;
+    width: 25vw;
     font-weight: 700;
     justify-content: center;
     text-align: justify;
 }
 
 .name{
-    font-size: 280%;
+    font-size: 2.5rem;
     color: turquoise;
 }
 .webd{
-    font-size: 230%;
+    font-size: 1.5rem;
     color: white;
 }
 .about{
-    font-size: 150%;
+    font-size: 1rem;
     color: rgb(134, 130, 130);
 }
 

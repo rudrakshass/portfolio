@@ -1,6 +1,6 @@
 #contact {
-    background-color: #1b1b1b; /* Darker background */
-    color: #f5f5f5; /* Light text for contrast */
+    background-color: #1b1b1b;
+    color: #f5f5f5; 
     min-height: 70vh;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ textarea {
 }
 
 .input-field:hover{
-    scale: 1.5;
+    scale: 1.2;
     box-shadow:  13px 13px 26px #101010,
              -13px -13px 26px #262626;
 }
@@ -107,7 +107,7 @@ textarea {
 }
 
 .input-field-box:hover{
-    scale: 1.5;
+    scale: 1.1;
     box-shadow:  13px 13px 26px #101010,
              -13px -13px 26px #262626;
 }
@@ -154,7 +154,7 @@ textarea {
 }
 
 #infobox_item.hovered {
-    box-shadow: 8px 8px 16px #151515, -8px -8px 16px #272727; /* Same as hover effect */
+    box-shadow: 8px 8px 16px #151515, -8px -8px 16px #272727;
 }
 
 .boxtitle{
