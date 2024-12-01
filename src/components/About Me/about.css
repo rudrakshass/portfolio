@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.about{
-    display: inline-flex;
+#about-container{
+    width: 100%;
+    max-width:1100px;
+    height:100vh;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center; 
+    position: relative; 
 }
+
 .abtheading {
     color: teal;
     font-weight: 300;
@@ -40,7 +47,6 @@
     position: relative;
     overflow: visible;
     margin: 5rem 1.2rem;
-    margin-bottom: 8rem;
     margin-top: 0;
     display: flex;
     flex-direction: column;
@@ -68,8 +74,8 @@
 }
 
 #abtbox_item.hovered {
-    box-shadow: 8px 8px 16px #151515, -8px -8px 16px #272727; /* Same as hover effect */
-  }
+    box-shadow: 8px 8px 16px #151515, -8px -8px 16px #272727; 
+}
 
 .expandedContent {
     margin-top: 0.5rem;
@@ -78,7 +84,7 @@
     text-align: center;
     padding: 2rem;
     color: rgb(134, 130, 130);
-  }
+}
 
 .inner {
     position: relative;
@@ -97,49 +103,42 @@
     opacity: 50%;
 }
 
-.abtboxlogo{
-    margin: 0.5rem;
-    margin-top: 1rem;
-    font-weight: 600;
-    width: 2rem;
-    height: 2rem;
-}
-
 .aboutcontent{
-    position: absolute;
-    left: 60rem;
-    z-index: -1;
-    height: 40vh;
-    width: 20vw;
-    margin: 5rem auto;
+    display: flex;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
     user-select: none;
 }
 
-.abouttext{
+.aboutpara{
     display: flex;
-    height: 1vh;
-    width: 20vw;
-    flex-direction: column;
+    height: 10%;
+    width: 40%;
     justify-content: center;
     text-align: justify;
     font-size: 1.33rem;
     font-weight: 600;
-    margin: 4rem auto;
+    margin: 5rem auto;
     color: rgb(134, 130, 130);
     user-select: none;
 }
 
 .photoofme2{
+    display: flex;
     position: relative;
-    left: 31rem;
-    z-index: -1;
-    object-fit: cover;
-    height: 40vh;
-    width: 20vw;
-    margin: 5.5rem auto;
-    margin-top: 0;
-    top: -4rem;
-    filter: grayscale(95%);
-    user-select: none;
+    align-items: center;
+    width:50%;
+    height:auto;
+    filter: grayscale(70%);
 }
 
+
+@media (max-width: 768px) {
+    .photoofme2{
+        display: none;
+    }
+    .aboutpara{
+        width: 70%;
+    }
+}

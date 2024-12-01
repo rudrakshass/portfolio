@@ -1,37 +1,52 @@
-#intro{
+#intro-container {
+    width: 100%;
+    max-width:1100px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center; 
+    position: relative; 
+}
+.intro-page{
     display: flex;
-    height:calc(100vh - 8rem);
+    height:calc(100vh - 11rem);
     align-items: center;
-    width: 100vw;
     max-height: 40%;
-    max-width: 80%;
     gap: 5%;
-    margin: 0 25%;
     position: relative;
 }
 
 .photoofme{
+    display: flex;
+    flex-direction: column;
     position: relative;
     object-fit: cover;
     height: auto;
-    width: 30%;
+    align-items: center;
+    width: 55%;
+}
+
+.photoofme .photo{
     filter: grayscale(50%);
+    width: 100%;
     border-radius: 19px;
     background: linear-gradient(145deg,#202020);
     box-shadow:  18px 18px 16px #0c0c0c;
 }
 
 .playwiththis{
-    position: relative;
-    top:-30%;
-    left:-3%;
+    position: sticky;
+    height: auto;
+    width: 50%;
+    margin-left: 2%;
+    align-self: flex-end;
 }
 
 .intro_content{
     display: inline-flex;
     flex-direction: column;
-    height: 70vh;
-    width: 25vw;
+    margin-top: 3rem;
+    height: auto;
+    width: 80%;
     font-weight: 700;
     justify-content: center;
     text-align: justify;
@@ -46,7 +61,7 @@
     color: white;
 }
 .about{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgb(134, 130, 130);
 }
 
@@ -76,11 +91,24 @@
     background-color: turquoise;    
   }
   
-  @media (max-width: 768px) {
-    #intro{
-        height: 60vh;
-        margin: 0 19%;
-        max-width: 90%;
+@media (max-width: 768px) {
+    #intro-container {
+        margin-left: 16%;
+        max-width: 768px;
+        padding: 0 5%;
+    }
+    .intro-page {
+        display: grid;
+        gap: 25%;
+        align-items: center;
+        justify-content: center;
+        max-height: 100%;
+    }
+    .intro_content{
+        display: grid;
+        -ms-grid-row-align: center;
+        width: 65%;
+        text-align: center;
     }
     .intro_contact{
         margin-top: 1rem;
@@ -89,22 +117,24 @@
         font-size: 0.5rem;
     }
     .photoofme{
+        margin-left: 1.8rem;
         height: 15rem;
+        grid-row:1;
     }
     .name{
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .webd{
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: white;
     }
     .about{
-        font-size: 0.7rem;
+        font-size: 1rem;
         color: rgb(134, 130, 130);
     }
-  }
+}
   
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
     #intro{
         height: 50vh;
         margin: 0 40%;
